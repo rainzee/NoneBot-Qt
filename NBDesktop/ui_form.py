@@ -19,7 +19,7 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMenu, QMenuBar,
     QSizePolicy, QStatusBar, QWidget)
 
-class UI(object):
+class Ui_Root(object):
     def setupUi(self, Root):
         if not Root.objectName():
             Root.setObjectName(u"Root")
