@@ -7,7 +7,6 @@
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
-
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -17,13 +16,13 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMenu, QMenuBar,
-    QSizePolicy, QStatusBar, QWidget)
+    QSizePolicy, QStackedWidget, QStatusBar, QWidget)
 
 class UI(object):
     def setupUi(self, Root):
         if not Root.objectName():
             Root.setObjectName(u"Root")
-        Root.resize(800, 600)
+        Root.resize(606, 648)
         self.help_us = QAction(Root)
         self.help_us.setObjectName(u"help_us")
         self.help_qt6 = QAction(Root)
@@ -40,8 +39,8 @@ class UI(object):
         self.run_project.setObjectName(u"run_project")
         self.open_dir = QAction(Root)
         self.open_dir.setObjectName(u"open_dir")
-        self.config_other = QAction(Root)
-        self.config_other.setObjectName(u"config_other")
+        self.config_driver = QAction(Root)
+        self.config_driver.setObjectName(u"config_driver")
         self.download_plugin = QAction(Root)
         self.download_plugin.setObjectName(u"download_plugin")
         self.list_plugin = QAction(Root)
@@ -50,12 +49,28 @@ class UI(object):
         self.upgrade_plugin.setObjectName(u"upgrade_plugin")
         self.rm_plugin = QAction(Root)
         self.rm_plugin.setObjectName(u"rm_plugin")
+        self.config_adapter = QAction(Root)
+        self.config_adapter.setObjectName(u"config_adapter")
+        self.config_env = QAction(Root)
+        self.config_env.setObjectName(u"config_env")
         self.centralwidget = QWidget(Root)
         self.centralwidget.setObjectName(u"centralwidget")
+        self.pages = QStackedWidget(self.centralwidget)
+        self.pages.setObjectName(u"pages")
+        self.pages.setGeometry(QRect(0, 0, 600, 600))
+        self.pages.setMinimumSize(QSize(600, 600))
+        self.pages.setMaximumSize(QSize(600, 600))
+        self.page = QWidget()
+        self.page.setObjectName(u"page")
+        self.page.setEnabled(False)
+        self.pages.addWidget(self.page)
+        self.page_2 = QWidget()
+        self.page_2.setObjectName(u"page_2")
+        self.pages.addWidget(self.page_2)
         Root.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(Root)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 800, 32))
+        self.menubar.setGeometry(QRect(0, 0, 606, 32))
         self.project = QMenu(self.menubar)
         self.project.setObjectName(u"project")
         self.config = QMenu(self.menubar)
@@ -87,7 +102,11 @@ class UI(object):
         self.project.addSeparator()
         self.project.addAction(self.open_dir)
         self.config.addAction(self.config_bot)
-        self.config.addAction(self.config_other)
+        self.config.addSeparator()
+        self.config.addAction(self.config_driver)
+        self.config.addAction(self.config_adapter)
+        self.config.addSeparator()
+        self.config.addAction(self.config_env)
         self.plugin.addAction(self.download_plugin)
         self.plugin.addAction(self.list_plugin)
         self.plugin.addAction(self.upgrade_plugin)
@@ -97,12 +116,18 @@ class UI(object):
         self.help.addAction(self.help_qt6)
 
         self.retranslateUi(Root)
+        self.new_project.triggered.connect(lambda:self.set_pages_index(2))
 
-        QMetaObject.connectSlotsByName(Root)
+        self.pages.setCurrentIndex(0)
+    
+
+
+
+
     # setupUi
 
     def retranslateUi(self, Root):
-        Root.setWindowTitle(QCoreApplication.translate("Root", u"Root", None))
+        Root.setWindowTitle(QCoreApplication.translate("Root", u"NoneBot QDesktop", None))
         self.help_us.setText(QCoreApplication.translate("Root", u"\u5173\u4e8e", None))
         self.help_qt6.setText(QCoreApplication.translate("Root", u"\u5173\u4e8eQt6", None))
         self.new_project.setText(QCoreApplication.translate("Root", u"\u65b0\u5efa", None))
@@ -111,11 +136,13 @@ class UI(object):
         self.config_bot.setText(QCoreApplication.translate("Root", u"\u9879\u76ee\u914d\u7f6e", None))
         self.run_project.setText(QCoreApplication.translate("Root", u"\u8fd0\u884c", None))
         self.open_dir.setText(QCoreApplication.translate("Root", u"\u6253\u5f00\u9879\u76ee\u6587\u4ef6\u5939", None))
-        self.config_other.setText(QCoreApplication.translate("Root", u"\u5176\u4ed6\u914d\u7f6e", None))
+        self.config_driver.setText(QCoreApplication.translate("Root", u"\u7ba1\u7406\u9a71\u52a8\u5668", None))
         self.download_plugin.setText(QCoreApplication.translate("Root", u"\u4e0b\u8f7d", None))
         self.list_plugin.setText(QCoreApplication.translate("Root", u"\u5217\u8868", None))
         self.upgrade_plugin.setText(QCoreApplication.translate("Root", u"\u66f4\u65b0", None))
         self.rm_plugin.setText(QCoreApplication.translate("Root", u"\u79fb\u9664", None))
+        self.config_adapter.setText(QCoreApplication.translate("Root", u"\u7ba1\u7406\u9002\u914d\u5668", None))
+        self.config_env.setText(QCoreApplication.translate("Root", u"\u7ba1\u7406\u73af\u5883", None))
         self.project.setTitle(QCoreApplication.translate("Root", u"\u9879\u76ee", None))
         self.config.setTitle(QCoreApplication.translate("Root", u"\u914d\u7f6e", None))
         self.plugin.setTitle(QCoreApplication.translate("Root", u"\u63d2\u4ef6", None))
@@ -124,3 +151,9 @@ class UI(object):
         self.exit.setTitle(QCoreApplication.translate("Root", u"\u9000\u51fa", None))
     # retranslateUi
 
+    #pages_index
+    def set_pages_index(self,page_num:int) :
+        self.pages.setCurrentIndex(page_num)
+
+    #singals
+    

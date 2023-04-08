@@ -6,20 +6,52 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>606</width>
+    <height>648</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Root</string>
+   <string>NoneBot QDesktop</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="pages">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>600</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>600</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>606</width>
      <height>32</height>
     </rect>
    </property>
@@ -40,7 +72,11 @@
      <string>配置</string>
     </property>
     <addaction name="config_bot"/>
-    <addaction name="config_other"/>
+    <addaction name="separator"/>
+    <addaction name="config_driver"/>
+    <addaction name="config_adapter"/>
+    <addaction name="separator"/>
+    <addaction name="config_env"/>
    </widget>
    <widget class="QMenu" name="plugin">
     <property name="title">
@@ -117,9 +153,9 @@
     <string>打开项目文件夹</string>
    </property>
   </action>
-  <action name="config_other">
+  <action name="config_driver">
    <property name="text">
-    <string>其他配置</string>
+    <string>管理驱动器</string>
    </property>
   </action>
   <action name="download_plugin">
@@ -142,7 +178,34 @@
     <string>移除</string>
    </property>
   </action>
+  <action name="config_adapter">
+   <property name="text">
+    <string>管理适配器</string>
+   </property>
+  </action>
+  <action name="config_env">
+   <property name="text">
+    <string>管理环境</string>
+   </property>
+  </action>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>new_project</sender>
+   <signal>triggered()</signal>
+   <receiver>pages</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
