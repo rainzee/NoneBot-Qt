@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>help_page</class>
+ <widget class="QWidget" name="help_page">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="help_pages">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>401</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <property name="documentMode">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="welcome">
+    <attribute name="title">
+     <string>欢迎</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>欢迎！</string>
+    </attribute>
+    <widget class="QTextBrowser" name="text1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>401</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#1e1e1e;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#55ffff;&quot;&gt;欢迎使用 NoneBot Desktop 应用程序。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#55ffff;&quot;&gt;本程序旨在减少使用 NoneBot2 时命令行的使用。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#55ffff;&quot;&gt;这里包含了本程序的一些功能用法。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#55ffff;&quot;&gt;进入其它标签页查看更多。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#55ffff;&quot;&gt;提示：方括号 [] 包裹的内容与实际界面中的控件/文本相对应；&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#55ffff;&quot;&gt;提示：尖括号 &amp;lt;&amp;gt; 包裹的内容表明其为外部应用程序;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#55ffff;&quot;&gt;提示：双左引号 `` 包裹的内容表示一个路径（统一使用 Unix 格式）。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="help_new_project">
+    <attribute name="title">
+     <string>新建项目</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>如何新建项目？</string>
+    </attribute>
+    <widget class="QTextBrowser" name="text2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>401</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#1e1e1e;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ffaaff;&quot;&gt;本页介绍了如何使用本程序创建新项目。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;在主界面点击 [项目]菜单 -&amp;gt; [新建项目] 进入创建项目页面。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;在[项目目录]一栏 通过[浏览]选择一个目录 或 直接将路径粘贴至[输入框] 用于创建项目。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;注意：项目目录*必须*是一个空目录（可以不存在），且避免使用保留名（如&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;\u00a0nonebot\u00a0&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;等）作为项目目录。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;在[驱动器]一栏选择你需要的驱动器（通常是 [FastAPI]）。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt; {DRIVERS_NOTICE}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;适配器用于与外界进行特定协议的数据交换。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;在[适配器]一栏选择你需要的适配器。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt; {ADAPTERS_NOTICE}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;如果需要使用无法从插件商店获取的插件（如自编插件、从源码下载的插件等），请勾选&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;[预留配置用于开发插件]选项，然后将这些插件正确放入 `src/plugins` 下。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;[创建虚拟环境]可以有效避免因系统 Python 环境混乱造成的一系列问题，建议开启。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt; {PYPI_INDEX_NOTICE}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:12pt; color:#ffaaff;&quot;&gt;创建完成后会自动进入新创建的项目目录。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="help_open_project">
+    <attribute name="title">
+     <string>打开与启动项目</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>如何打开/启动项目？</string>
+    </attribute>
+    <widget class="QTextBrowser" name="text3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>411</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#1e1e1e;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;本页介绍了如何使用本程序打开并运行已有的项目。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;在主界面点击 [项目]菜单 -&amp;gt; [打开项目] 选择你的项目目录 或 直接将路径粘贴至主界面的[输入框]。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;如果项目目录正确，主界面的[启动]按钮等功能将全部可用。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;提示：本程序只支持识别有 `pyproject.toml` 或 `bot.py` 的目录作为项目目录。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;正确打开项目目录后，点击 主界面上的[启动] 或 [项目]菜单 -&amp;gt; [启动项目] 来运行项目。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;提示：项目会在一个新的命令行窗口中运行，Windows 上仅支持使用 &amp;lt;cmd.exe&amp;gt;，Linux 上会自动从 &amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&amp;lt;gnome-terminal&amp;gt;, &amp;lt;konsole&amp;gt;, &amp;lt;xfce4-terminal&amp;gt;, &amp;lt;xterm&amp;gt;, &amp;lt;st&amp;gt; 中查找可用的终端模拟器。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;提示：运行结束后窗口不会直接关闭，因此不必担心无法查看程序输出。&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="help_edit_config">
+    <attribute name="title">
+     <string>编辑配置文件</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>如何编辑配置文件？</string>
+    </attribute>
+    <widget class="QTextBrowser" name="text4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>401</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#1e1e1e;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;本页介绍了如何使用本程序编辑项目的配置文件。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;注意：本页中的配置文件均指项目文件夹中的 DotEnv 文件（所有以 `.env` 开头的配置文件）。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;注意：部分插件并不使用这些配置文件，实际使用时请先查看相关插件文档。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;在主界面点击 [配置]菜单 -&amp;gt; [配置文件编辑器] 进入配置文件编辑页面。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;在[可用配置文件]一栏的[下拉框]中选择需要编辑的配置文件，选择后将自动打开该文件。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;[配置项]一栏列出了当前选中的配置文件中所有的配置项（注释在读取和保存时会被忽略）。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;每个配置项等号左侧是该配置项的名称（不区分大小写），等号右侧是该配置项的字面值。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;如果要添加一个新的配置项，点击下方的[新建配置项]按钮，然后自行填写新配置项的名称和值即可。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;本程序在保存时会自动移除空的配置项，因此如果要删除某个配置项，只需要将其名称或字面值清空即可。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;编辑完成后，点击[保存]按钮将新的配置写入文件。&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d7ba7d;&quot;&gt;\n&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;注意：只有在点击[保存]按钮时更改才会被写入到文件，直接关闭窗口或切换至其他配置文件均会丢失当前更改，&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#d4d4d4;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Mono','monospace','monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;本程序*不会*试图通过任何提示阻止这种行为。&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

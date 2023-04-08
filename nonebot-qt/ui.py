@@ -22,7 +22,7 @@ class UI(object):
     def setupUi(self, Root):
         if not Root.objectName():
             Root.setObjectName(u"Root")
-        Root.resize(606, 648)
+        Root.resize(606, 620)
         self.help_us = QAction(Root)
         self.help_us.setObjectName(u"help_us")
         self.help_qt6 = QAction(Root)
@@ -53,6 +53,8 @@ class UI(object):
         self.config_adapter.setObjectName(u"config_adapter")
         self.config_env = QAction(Root)
         self.config_env.setObjectName(u"config_env")
+        self.senior_terminal = QAction(Root)
+        self.senior_terminal.setObjectName(u"senior_terminal")
         self.centralwidget = QWidget(Root)
         self.centralwidget.setObjectName(u"centralwidget")
         self.pages = QStackedWidget(self.centralwidget)
@@ -60,6 +62,7 @@ class UI(object):
         self.pages.setGeometry(QRect(0, 0, 600, 600))
         self.pages.setMinimumSize(QSize(600, 600))
         self.pages.setMaximumSize(QSize(600, 600))
+        '''
         self.page = QWidget()
         self.page.setObjectName(u"page")
         self.page.setEnabled(False)
@@ -67,6 +70,7 @@ class UI(object):
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
         self.pages.addWidget(self.page_2)
+        '''
         Root.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(Root)
         self.menubar.setObjectName(u"menubar")
@@ -112,11 +116,11 @@ class UI(object):
         self.plugin.addAction(self.upgrade_plugin)
         self.plugin.addSeparator()
         self.plugin.addAction(self.rm_plugin)
+        self.senior.addAction(self.senior_terminal)
         self.help.addAction(self.help_us)
         self.help.addAction(self.help_qt6)
 
         self.retranslateUi(Root)
-        self.new_project.triggered.connect(lambda:self.set_pages_index(2))
 
         self.pages.setCurrentIndex(0)
     
@@ -143,6 +147,7 @@ class UI(object):
         self.rm_plugin.setText(QCoreApplication.translate("Root", u"\u79fb\u9664", None))
         self.config_adapter.setText(QCoreApplication.translate("Root", u"\u7ba1\u7406\u9002\u914d\u5668", None))
         self.config_env.setText(QCoreApplication.translate("Root", u"\u7ba1\u7406\u73af\u5883", None))
+        self.senior_terminal.setText(QCoreApplication.translate("Root", u"\u7ec8\u7aef", None))
         self.project.setTitle(QCoreApplication.translate("Root", u"\u9879\u76ee", None))
         self.config.setTitle(QCoreApplication.translate("Root", u"\u914d\u7f6e", None))
         self.plugin.setTitle(QCoreApplication.translate("Root", u"\u63d2\u4ef6", None))
@@ -151,9 +156,4 @@ class UI(object):
         self.exit.setTitle(QCoreApplication.translate("Root", u"\u9000\u51fa", None))
     # retranslateUi
 
-    #pages_index
-    def set_pages_index(self,page_num:int) :
-        self.pages.setCurrentIndex(page_num)
-
-    #singals
-    
+  

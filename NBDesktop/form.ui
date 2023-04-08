@@ -92,6 +92,7 @@
     <property name="title">
      <string>高级</string>
     </property>
+    <addaction name="senior_terminal"/>
    </widget>
    <widget class="QMenu" name="help">
     <property name="title">
@@ -186,6 +187,11 @@
   <action name="config_env">
    <property name="text">
     <string>管理环境</string>
+   </property>
+  </action>
+  <action name="senior_terminal">
+   <property name="text">
+    <string>终端</string>
    </property>
   </action>
  </widget>
