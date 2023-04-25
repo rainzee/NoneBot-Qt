@@ -15,16 +15,29 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QSizePolicy, QTextBrowser, QWidget)
+from PySide6.QtWidgets import (QApplication, QLineEdit, QPushButton, QSizePolicy,
+    QTextBrowser, QWidget)
 
 class Ui_terminal_page(QWidget):
     def setupUi(self, terminal_page):
         if not terminal_page.objectName():
             terminal_page.setObjectName(u"terminal_page")
-        terminal_page.resize(600, 600)
+        terminal_page.resize(600,600)
         self.terminal = QTextBrowser(terminal_page)
         self.terminal.setObjectName(u"terminal")
-        self.terminal.setGeometry(QRect(0, 0, 600, 600))
+        self.terminal.setGeometry(QRect(0, 0, 600, 550))
+        self.pushButton = QPushButton(terminal_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(50, 560, 80, 30))
+        self.pushButton_2 = QPushButton(terminal_page)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setGeometry(QRect(150, 560, 80, 30))
+        self.pushButton_3 = QPushButton(terminal_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setGeometry(QRect(500, 560, 80, 30))
+        self.lineEdit = QLineEdit(terminal_page)
+        self.lineEdit.setObjectName(u"lineEdit")
+        self.lineEdit.setGeometry(QRect(250, 560, 200, 30))
 
         self.retranslateUi(terminal_page)
 
@@ -33,8 +46,8 @@ class Ui_terminal_page(QWidget):
 
     def retranslateUi(self, terminal_page):
         terminal_page.setWindowTitle(QCoreApplication.translate("terminal_page", u"Form", None))
+        self.pushButton.setText(QCoreApplication.translate("terminal_page", u"\u6e05\u9664\u8bb0\u5f55", None))
+        self.pushButton_2.setText(QCoreApplication.translate("terminal_page", u"\u505c\u6b62\u8fd0\u884c", None))
+        self.pushButton_3.setText(QCoreApplication.translate("terminal_page", u"\u53d1\u9001", None))
     # retranslateUi
 
-    #ouput
-    def output(self,data: str)->None:
-        self.terminal.append(data)
