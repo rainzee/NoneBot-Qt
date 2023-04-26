@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Root</class>
+ <widget class="QMainWindow" name="Root">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>606</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NoneBot QDesktop</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="pages">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>600</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>600</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>606</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="project">
+    <property name="title">
+     <string>项目</string>
+    </property>
+    <addaction name="new_project"/>
+    <addaction name="open_project"/>
+    <addaction name="get_project"/>
+    <addaction name="separator"/>
+    <addaction name="run_project"/>
+    <addaction name="separator"/>
+    <addaction name="open_dir"/>
+   </widget>
+   <widget class="QMenu" name="config">
+    <property name="title">
+     <string>配置</string>
+    </property>
+    <addaction name="config_bot"/>
+    <addaction name="separator"/>
+    <addaction name="config_driver"/>
+    <addaction name="config_adapter"/>
+    <addaction name="separator"/>
+    <addaction name="config_env"/>
+   </widget>
+   <widget class="QMenu" name="plugin">
+    <property name="title">
+     <string>插件</string>
+    </property>
+    <addaction name="download_plugin"/>
+    <addaction name="list_plugin"/>
+    <addaction name="upgrade_plugin"/>
+    <addaction name="separator"/>
+    <addaction name="rm_plugin"/>
+   </widget>
+   <widget class="QMenu" name="senior">
+    <property name="title">
+     <string>高级</string>
+    </property>
+    <addaction name="senior_terminal"/>
+   </widget>
+   <widget class="QMenu" name="help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="help_us"/>
+    <addaction name="help_qt6"/>
+   </widget>
+   <widget class="QMenu" name="exit">
+    <property name="title">
+     <string>退出</string>
+    </property>
+   </widget>
+   <addaction name="project"/>
+   <addaction name="config"/>
+   <addaction name="plugin"/>
+   <addaction name="senior"/>
+   <addaction name="help"/>
+   <addaction name="exit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="help_us">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="help_qt6">
+   <property name="text">
+    <string>关于Qt6</string>
+   </property>
+  </action>
+  <action name="new_project">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="open_project">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="get_project">
+   <property name="text">
+    <string>获取</string>
+   </property>
+  </action>
+  <action name="config_bot">
+   <property name="text">
+    <string>项目配置</string>
+   </property>
+  </action>
+  <action name="run_project">
+   <property name="text">
+    <string>运行</string>
+   </property>
+  </action>
+  <action name="open_dir">
+   <property name="text">
+    <string>打开项目文件夹</string>
+   </property>
+  </action>
+  <action name="config_driver">
+   <property name="text">
+    <string>管理驱动器</string>
+   </property>
+  </action>
+  <action name="download_plugin">
+   <property name="text">
+    <string>下载</string>
+   </property>
+  </action>
+  <action name="list_plugin">
+   <property name="text">
+    <string>列表</string>
+   </property>
+  </action>
+  <action name="upgrade_plugin">
+   <property name="text">
+    <string>更新</string>
+   </property>
+  </action>
+  <action name="rm_plugin">
+   <property name="text">
+    <string>移除</string>
+   </property>
+  </action>
+  <action name="config_adapter">
+   <property name="text">
+    <string>管理适配器</string>
+   </property>
+  </action>
+  <action name="config_env">
+   <property name="text">
+    <string>管理环境</string>
+   </property>
+  </action>
+  <action name="senior_terminal">
+   <property name="text">
+    <string>终端</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>new_project</sender>
+   <signal>triggered()</signal>
+   <receiver>pages</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -7,6 +7,7 @@
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
+
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -18,11 +19,11 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMenu, QMenuBar,
     QSizePolicy, QStackedWidget, QStatusBar, QWidget)
 
-class UI(object):
+class Ui_Root(object):
     def setupUi(self, Root):
         if not Root.objectName():
             Root.setObjectName(u"Root")
-        Root.resize(606, 620)
+        Root.resize(606, 648)
         self.help_us = QAction(Root)
         self.help_us.setObjectName(u"help_us")
         self.help_qt6 = QAction(Root)
@@ -62,7 +63,6 @@ class UI(object):
         self.pages.setGeometry(QRect(0, 0, 600, 600))
         self.pages.setMinimumSize(QSize(600, 600))
         self.pages.setMaximumSize(QSize(600, 600))
-        '''
         self.page = QWidget()
         self.page.setObjectName(u"page")
         self.page.setEnabled(False)
@@ -70,7 +70,6 @@ class UI(object):
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
         self.pages.addWidget(self.page_2)
-        '''
         Root.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(Root)
         self.menubar.setObjectName(u"menubar")
@@ -121,13 +120,12 @@ class UI(object):
         self.help.addAction(self.help_qt6)
 
         self.retranslateUi(Root)
+        self.new_project.triggered.connect(self.pages.update)
 
         self.pages.setCurrentIndex(0)
-    
 
 
-
-
+        QMetaObject.connectSlotsByName(Root)
     # setupUi
 
     def retranslateUi(self, Root):
@@ -156,4 +154,3 @@ class UI(object):
         self.exit.setTitle(QCoreApplication.translate("Root", u"\u9000\u51fa", None))
     # retranslateUi
 
-  
